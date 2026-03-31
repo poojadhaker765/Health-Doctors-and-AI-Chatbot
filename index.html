@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare ChatBot</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .select-box {
+            width: 180px;
+            /* height: 300px; */
+            /* background-color: aliceblue; */
+            /* margin-top: 167px; */
+            top: 0px;
+            position: absolute;
+            right: 50px;
+            margin-top: 35px;
+        }
+
+        .select-heading {
+            background-color: rgba(173, 216, 230, 0.871);
+            width: 100%;
+            height: 20%;
+            padding: 10px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            cursor: pointer;
+            border: 2.5px solid rgba(134, 208, 238, 0.759);
+            /* display: none; */
+        }
+
+        .select-heading img {
+            transition: all 0.3s;
+        }
+
+
+        .options {
+            width: 100%;
+            /* height: 300px; */
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: rgba(173, 216, 230, 0.7);
+            backdrop-filter: 5px;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 20px;
+            display: none;
+
+        }
+
+        .active-options {
+            display: flex;
+        }
+
+        .rotate {
+            transform: rotate(180deg);
+        }
+
+        .option {
+            border-radius: 20px;
+            /* background-color: antiquewhite; */
+            padding: 10px;
+            cursor: pointer;
+            transition: all 0.4s;
+            color: black;
+        }
+
+        .option:hover {
+            background-color: aliceblue;
+            letter-spacing: 1px;
+        }
+
+        .right-nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <header>
+        <h1 style="color: blacks;">💬 Health Doctors and AI chatbot</h1>
+
+
+        <div class="select-box">
+            <div class="select-heading"><span>Disease </span><img src="./img/arrow-icon.svg" alt="" width="25px"
+                    height="25px" class="rotate"></div>
+            <div class="options active-options">
+                <div class="option">Fever</div>
+                <div class="option">Eyes</div>
+                <div class="option">haert attack</div>
+                <div class="option">stomuch</div>
+                <div class="option">skin care</div>
+                <div class="option">Headek</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <main>
+        <div id="chat-container">
+            <div id="chat-box"></div>
+
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Enter your symptoms...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main> -->
+
+
+
+    <!-- content-scroll -->
+    <div class="scroll-h1">
+        <h1>Doctors And Doctors Details</h1>
+
+    </div>
+    <div class="content-scroll">
+
+        <div class="doctor"><a href="https://www.indicure.com/best-dermatologist-india/"><img src="img/skin.jpg" alt=""
+                    height="180px"></a>
+            <span>skin doctor</span>
+        </div>
+
+        <div class="doctor"><a href="https://www.indicure.com/best-oncologist-india/"><img src="img/caner1.jpg"
+                    alt=""></a>
+            <span>caner doctor</span>
+        </div>
+        <div class="doctor"><a href="https://www.maxhealthcare.in/condition/india/migraine-doctors-in-india"><img
+                    src="img/headek.jpg" alt=""></a>
+            <span>Headek Doctors</span>
+        </div>
+        <div class="doctor"><a href="https://www.maxhealthcare.in/doctor/gastroenterologist"><img src="img/stomuch.jpg"
+                    alt=""></a>
+            <span> stomuch Doctors</span>
+        </div>
+        <div class="doctor"><a
+                href="https://www.indianhealthguru.com/eye-surgery-best-surgeons-top-hospitals-India.html"><img
+                    height="180px" src="img/eyes.jpg" alt=""></a>
+            <span>Eyes doctor</span>
+        </div>
+        <div class="doctor"><a href=""><img src="img/joint.jpg" alt=""></a>
+            <span>Joint Doctors</span>
+        </div>
+
+    </div>
+
+
+    <main>
+        <div id="chat-container">
+            <div id="chat-box"></div>
+
+            <div id="input-area">
+                <input type="text" id="user-input" placeholder="Enter your symptoms...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- content-scroll -->
+    <!-- <div class="scroll-h1">
+        <h1>Doctors And Doctors Details</h>
+    </div>
+    <div class="content-scroll">
+
+        <div class="doctor"><a href="https://www.indicure.com/best-dermatologist-india/"><img src="skin.jpg" alt=""
+                    height="180px"></a>
+            <span>skin doctor</span>
+        </div>
+
+        <div class="doctor"><a href="https://www.indicure.com/best-oncologist-india/"><img src="caner1.jpg" alt=""></a>
+            <span>caner doctor</span>
+        </div>
+        <div class="doctor"><a href="https://www.maxhealthcare.in/condition/india/migraine-doctors-in-india"><img
+                    src="headek.jpg" alt=""></a>
+            <span>Headek Doctors</span>
+        </div>
+        <div class="doctor"><a href="https://www.maxhealthcare.in/doctor/gastroenterologist"><img src="stomuch.jpg"
+                    alt=""></a>
+            <span> stomuch Doctors</span>
+        </div>
+        <div class="doctor"><a
+                href="https://www.indianhealthguru.com/eye-surgery-best-surgeons-top-hospitals-India.html"><img
+                    height="180px" src="eyes.jpg" alt=""></a>
+            <span>Eyes doctor</span>
+        </div>
+        <div class="doctor"><img src="joint.jpg" alt=""></div>
+
+    </div> -->
+    <div class="map">
+        <h1 class="">Near By hospital Location</h1>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d71553.19399880983!2d75.85122564933346!3d26.750047116436466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc9d6467b679f%3A0x4f6a0154a2bb292c!2sBombay%20Hospital%20Jaipur!5e0!3m2!1sen!2sin!4v1760008647788!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </div>
+
+
+
+
+    <footer style=" background-color:white; padding:20px; text-align:center;">
+        <h3>Emergency Contacts</h3>
+        <p>🚑 Ambulance: <strong>108</strong></p>
+        <p>👮 Police: <strong>100</strong></p>
+        <p>🔥 Fire: <strong>101</strong></p>
+        <p>💊 National Health Helpline: <strong>104</strong></p>
+        <p>🧠 Mental Health Helpline: <strong>1800-599-0019</strong></p>
+
+        <hr style="border:0.5px solid white; width:80%;">
+        <p>© 2025 HealthCare Portal | Designed for public awareness</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script>
+        let select = document.querySelector(".select-heading")
+        let arrow = document.querySelector(".select-heading img")
+        let options = document.querySelector(".options")
+        let option = document.querySelectorAll(".option")
+        let selecttext = document.querySelector(".select-heading span")
+
+        select.addEventListener("click", () => {
+            options.classList.toggle("active-options")
+            arrow.classList.toggle("rotate")
+        })
+        option.forEach((item) => {
+            item.addEventListener("click", () => {
+                selecttext.innerText = item.innerText
+            })
+        })
+
+    </script>
+</body>
+
+</html>
